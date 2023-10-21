@@ -5,7 +5,7 @@ export const getPosts = async (page: number, searchString: string) => {
 	// https://api.eduki.com/api/v1/elastic?limit=20&p=1&q=&world=de
 
 	return await fetch(
-		`https://api.eduki.com/api/v1/elastic?limit=20&p=${page}&q=&world=de`,
+		`https://api.eduki.com/api/v1/elastic?limit=20&p=${page}&q=${searchString}&world=de`,
 		{
 			headers: {
 				"Content-Type": "application/json",
